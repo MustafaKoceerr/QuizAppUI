@@ -2,4 +2,21 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="orange">#f78441</color>
+    <color name="navy_blue">#352e4f</color>
+    <color name="purple">#8c72ed</color>
+    <color name="blue">#45beb9</color>
+    <color name="red">#f55150</color>
+    <color name="green">#34d287</color>
+    <color name="grey">#e9e7f2</color>
+    <color name="gradient_blue_start">#352e4f</color>
+    <color name="gradient_blue_end">#433b62</color>
+    <color name="color_bottom_icon">#757575</color>
+    <color name="img_view_border_first">#febb3a</color>
+    <color name="img_view_border_second">#BFBFC0</color>
+    <color name="img_view_border_third">#ae844f</color>
+
+    <color name="color_score_first">#f8c96f</color>
+
+
 </resources>
