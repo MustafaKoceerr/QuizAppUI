@@ -1,10 +1,12 @@
-package com.android.example.quizappuimvvm
+package com.android.example.quizappuimvvm.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.android.example.quizappuimvvm.R
 import com.android.example.quizappuimvvm.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -23,5 +25,13 @@ class MainActivity : AppCompatActivity() {
 
         window.statusBarColor = ContextCompat.getColor(this@MainActivity, R.color.grey)
 
+        binding.apply {
+            bottomMenu.setItemSelected(R.id.home)
+            bottomMenu.setOnItemSelectedListener {
+                if (it==R.id.board){
+                    startActivity(Intent(this@MainActivity, LeaderActivity::class.java))
+                }
+            }
+        }
     }
 }
