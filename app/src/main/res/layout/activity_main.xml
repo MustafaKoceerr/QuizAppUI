@@ -85,9 +85,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="145dp"
                 android:layout_marginTop="24dp"
+                android:orientation="horizontal"
                 android:paddingStart="12dp"
-                android:paddingEnd="12dp"
-                android:orientation="horizontal">
+                android:paddingEnd="12dp">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -102,7 +102,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:srcCompat="@drawable/btn1" />
+                        android:src="@drawable/btn1" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -127,7 +127,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:srcCompat="@drawable/btn2" />
+                        android:src="@drawable/btn2" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -153,7 +153,7 @@
                         android:id="@+id/imageView4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:srcCompat="@drawable/btn3" />
+                        android:src="@drawable/btn3" />
 
                     <TextView
                         android:id="@+id/textView2"
@@ -218,7 +218,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        tools:srcCompat="@drawable/cat1" />
+                        android:src="@drawable/cat1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -249,7 +249,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        tools:srcCompat="@drawable/cat2" />
+                        android:src="@drawable/cat2" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -285,7 +285,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        tools:srcCompat="@drawable/cat3" />
+                        android:src="@drawable/cat3" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -317,7 +317,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
-                        tools:srcCompat="@drawable/cat4" />
+                        android:src="@drawable/cat4" />
 
                     <TextView
                         android:id="@+id/textView5"
@@ -342,9 +342,9 @@
                     android:id="@+id/imageView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/coins"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    tools:srcCompat="@drawable/coins" />
+                    app:layout_constraintEnd_toEndOf="parent" />
 
                 <TextView
                     android:id="@+id/textTry"
@@ -382,8 +382,8 @@
         android:layout_height="70dp"
         android:layout_gravity="bottom"
         android:background="@color/white"
-        app:cnb_iconSize="24dp"
         app:cnb_addBottomInset="true"
+        app:cnb_iconSize="24dp"
         app:cnb_menuResource="@menu/menu_bottom"
         app:cnb_orientationMode="horizontal"
         app:cnb_radius="8dp"
