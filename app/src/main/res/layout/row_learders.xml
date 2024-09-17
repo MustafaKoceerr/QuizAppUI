@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/background_white"
+    android:gravity="center"
+    android:elevation="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/rowTxtRank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="0" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/rowImgCircle"
+        android:layout_width="57dp"
+        android:layout_height="57dp"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:strokeColor="@color/orange"
+        app:strokeWidth="2dp"
+        android:padding="2dp"
+        android:scaleType="centerCrop"
+        />
+    <TextView
+        android:id="@+id/rowTxtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Name" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/garnet"
+        />
+
+    <TextView
+        android:id="@+id/rowTxtScore"
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:textColor="@color/navy_blue"
+        android:layout_height="wrap_content"
+        android:text="0000" />
+</LinearLayout>
