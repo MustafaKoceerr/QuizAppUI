@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
+    android:background="@color/grey"
     android:layout_height="match_parent"
-    tools:context=".LeaderActivity">
+    tools:context=".activity.LeaderActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -64,6 +65,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
@@ -309,9 +311,28 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerLeaderView"
+                android:layout_marginTop="12dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
         </LinearLayout>
     </ScrollView>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/bottomMenu"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:cnb_iconSize="24dp"
+        app:cnb_addBottomInset="true"
+        app:cnb_menuResource="@menu/menu_bottom"
+        app:cnb_orientationMode="horizontal"
+        app:cnb_radius="8dp"
+        app:cnb_unselectedColor="@color/color_bottom_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
